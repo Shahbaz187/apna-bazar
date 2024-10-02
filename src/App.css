@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=New+Amsterdam&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Navbar  */
+
+.navbar {
+  height: 80px;
+  background-color: #6deef8;
+}
+
+.navbar .logo h2 {
+  margin-top: 13px;
+  font-size: 2.3rem;
+  font-family: "New Amsterdam", sans-serif;
+  letter-spacing: 3px;
+}
+
+.navbar .nav-search {
+  position: relative;
+  width: 50%;
+}
+
+.navbar .nav-search input {
+  width: 100%;
+  height: 40px;
+  padding: 0 15px;
+  border: none;
+  border-radius: 50px;
+  font-size: 1rem;
+  outline: none;
+}
+
+.navbar .nav-search span {
+  position: absolute;
+  border-radius: 0 50px 50px 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.4rem;
+  right: 0px;
+  color: #ffffff;
+  background: #333333;
+  height: 40px;
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.2s linear;
+  cursor: pointer;
+}
+
+.navbar .nav-search span:hover {
+  background: #585858;
+}
+
+.hero-section {
+  min-height: 70vh;
+}
+
+.hero-contant h1 {
+  font-family: "New Amsterdam", sans-serif;
+  letter-spacing: 5px;
+  font-size: 2rem;
+  line-height: 70px;
+}
+
+.hero-contant h1 span {
+  display: block;
+  font-family: "New Amsterdam", sans-serif;
+  font-size: 7rem;
+  background: linear-gradient(#69a3be, #6deef8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.hero-contant p {
+  color: #585858;
+  font-size: 17px;
+}
+
+.hero-contant button {
+  width: 145px;
+  border-radius: 0 !important;
+  outline: none !important;
+  color: #0495a0;
+  border: 2px solid #6deef8 !important;
+  box-shadow: 0 0 10px #6deef8;
+}
+.hero-contant button:hover {
+  color: white;
+  border: 2px solid #6deef8 !important;
+  background: #6deef8 !important;
+}
+
+.hero-img img {
+  width: 100%;
+}
+
+
+.product-section{
+  padding: 10vh 0;
+}
+
+.top-heading h2{
+  color: #22bfca;
+  font-size: 4rem;
+  font-weight: 800;
+  font-family: mv boli;
+}
+
+.p-type{
+  background: #919191 !important;
+  color: white !important;
+}
+
+.p-type:hover{
+  background: #afafaf !important;
+}
+
+.product-section .card{
+  background: #dfdfdf;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: 0.3s linear;
+}
+
+.product-section .card:hover{
+  box-shadow:  2px 2px 5px rgba(0, 0, 0, 0.404);
+
+}
+
+.product-section .card-content{
+  padding: 10px;
+}
+
+.product-section .card-content h4{
+  font-size: 1.2rem;
+}
+
+.product-section .card-content h5{
+  font-size: 1.2rem;
+  margin-top: 10px;
+  color: red;
+}
+
+footer{
+  background-color: #52effa;
+  text-align: center;
+  padding: 5px 0;
+  font-size: 1.2rem;
+}
+
+@media (max-width: 1208px) {
+  .hero-contant h1 span {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 991px) {
+  .hero-section {
+    padding: 6vh 0;
+  }
+
+  .hero-contant {
+    text-align: center;
+  }
+
+  .hero-contant button {
+    margin: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .top-heading h2{
+    font-size: 3.3rem;
+  }
+}
+
+@media (max-width: 700px) {
+  .navbar .logo h2 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+
+  .navbar .nav-search {
+    width: 300px;
+  }
+
+  .navbar .nav-search span {
+    font-size: 1.4rem;
+    height: 40px;
+    width: 50px;
+  }
+}
+@media (max-width: 550px) {
+  .navbar .logo h2 {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+  }
+
+  .navbar .nav-search {
+    width: 300px;
+  }
+
+  .navbar .nav-search span {
+    font-size: 1.1rem;
+    height: 33px;
+    width: 40px;
+  }
+
+  .navbar .nav-search input {
+    height: 33px;
+    font-size: 1rem;
+  }
+  .hero-contant h1{
+    line-height: 55px;
+  }
+  .hero-contant h1 span {
+    font-size: 5rem;
+  }
+  .hero-contant p{
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+
+}
+
+@media (max-width: 500px) {
+  .navbar .logo{
+    display: none;
+  }
+  .navbar .nav-search{
+    width: 100%;
+  }
+    .hero-contant h1{
+    line-height: 50px;
+    font-size: 2rem;
+  }
+  .hero-contant h1 span {
+    font-size: 4.5rem;
+  }
+}
+@media (max-width: 470px) {
+  .top-heading h2{
+    font-size: 2.5rem;
+  }
+  footer{
+    font-size: 1rem;
+  }
+  
+}
+@media (max-width: 390px) {
+    .hero-contant h1{
+    line-height: 45px;
+    font-size: 1.8rem;
+  }
+  .hero-contant h1 span {
+    font-size: 3.8rem;
+    letter-spacing: 3px;
+  }
+  .hero-contant p{
+    margin-top: 5px;
+  }
+}
